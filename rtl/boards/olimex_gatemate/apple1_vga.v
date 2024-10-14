@@ -107,7 +107,7 @@ pll pll_inst (
 
         .ps2_clk(ps2clk),
         .ps2_din(ps2data),
-        .ps2_select(1'b1),
+        .ps2_select(1'b0),
 
         .vga_h_sync(o_hsync),
         .vga_v_sync(o_vsync),

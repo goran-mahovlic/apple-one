@@ -8,9 +8,9 @@ if len(sys.argv) != 2:
     print("Usage: " + sys.argv[0] + " <filename>")
     sys.exit(1)
 
-os.system('stty -F /dev/ttyUSB0 raw -echo 115200')
+os.system('stty -F /dev/ttyACM0 raw -echo 115200')
 fin = open(sys.argv[1], "r")
-fout = open("/dev/ttyUSB0", "w")
+fout = open("/dev/ttyACM0", "w")
 
 for line in fin:
     for ch in line.strip('\n'):
