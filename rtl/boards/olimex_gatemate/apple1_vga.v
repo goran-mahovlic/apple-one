@@ -116,7 +116,7 @@ pll pll_inst (
         .vga_cls(~clr_screen_n),
     );
 
-    //assign o_led = pc_monitor[7];
+    assign o_led = pc_monitor[7];
 
 /*
 reg [31:0]count;
